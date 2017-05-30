@@ -44,12 +44,12 @@ class Network(object):
             else:
                 print "Epoch {0} complete".format(j)
         lines = plt.plot(results)
-        plt.setp(lines, animated = True, color='r', linewidth=2.0)
-        plt.xlabel('Percent accuracy')
-        plt.ylabel('Epochs')
+        plt.setp(lines, color='r', linewidth=2.0)
+        plt.ylabel('Percent accuracy')
+        plt.xlabel('Epochs')
         plt.title('BTP by Akash, Apoorva, Aishwarya')
         plt.grid(True)
-        plt.show()
+        plt.show(lines)
 
     def update_mini_batch(self, mini_batch, eta):
         nabla_b = [np.zeros(b.shape) for b in self.biases]
