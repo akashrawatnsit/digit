@@ -110,7 +110,7 @@ class Network(object):
         plt.setp(lines, color='r', linewidth=2.0)
         plt.ylabel('Percent accuracy')
         plt.xlabel('Epochs')
-        plt.title('BTP by Akash, Apurva, Aishwarya')
+        plt.title('BTP Neural Network Accuracy Plot After Enhancements')
         plt.grid(True)
         plt.show(lines)
 
