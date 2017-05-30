@@ -32,6 +32,8 @@ def main():
                       for image, digit in zip(test_data[0], test_data[1]))
     print "Baseline classifier using average darkness of image."
     print "%s of %s values correct." % (num_correct, len(test_data[1]))
+    print "Accuracy in percent = %f" %((100.0*num_correct)/len(test_data[1]))
+
 
 def avg_darknesses(training_data):
     """ Return a defaultdict whose keys are the digits 0 through 9.
