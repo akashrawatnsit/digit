@@ -47,7 +47,7 @@ class Network(object):
         plt.setp(lines, color='r', linewidth=2.0)
         plt.ylabel('Percent accuracy')
         plt.xlabel('Epochs')
-        plt.title('BTP by Akash, Apoorva, Aishwarya')
+        plt.title('BTP by Akash, Apurva, Aishwarya')
         plt.grid(True)
         plt.show(lines)
 
